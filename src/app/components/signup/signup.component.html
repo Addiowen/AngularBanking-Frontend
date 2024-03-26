@@ -1,0 +1,21 @@
+<div class="signup-container">
+  <div class="signup-card">
+    <form class="signup-form" [formGroup]="signUpForm" (ngSubmit)="signUp()">
+      <h1 class="signup-title">Hello, Welcome</h1>
+      <h3 class="signup-subtitle">Create An Account</h3>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input formControlName="name" type="text" required>
+        <label for="email">Email</label>
+        <input formControlName="email" type="email" required>
+        <label for="id">ID</label>
+        <input formControlName="id" type="text">
+      </div>
+      <button type="submit" class="btn-signup">Submit</button>
+      <span class="signup-text">Already have an account? <a routerLink="/login">Login</a></span>
+    </form>
+    <div class="signup-image">
+      <img src="assets/signup-image.jpg" alt="Image" style="max-width: 100%; height: auto;">
+    </div>
+  </div>
+</div>

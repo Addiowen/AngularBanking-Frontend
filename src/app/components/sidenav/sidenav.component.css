@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* Use a more readable font */
+}
+
+.sidebar {
+  width: 240px; /* Increase width for better readability */
+  background-color: #333; /* Dark background color */
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  color: #fff; /* Light text color for contrast */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.sidebar-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu-item {
+  margin-bottom: 10px; /* Add some space between menu items */
+}
+
+.sidebar-menu-link {
+  color: #fff; /* Light text color for links */
+  text-decoration: none;
+  display: block;
+  padding: 5px 10px;
+  border-radius: 3px; /* Add rounded corners to links */
+  transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.sidebar-menu-link:hover {
+  background-color: #555; /* Darken background color on hover */
+}
+
+
+.sidebar-menu-item {
+  margin-bottom: 10px;
+}
+
+.sidebar-menu-link {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: #333;
+}
+
+.sidebar-menu-link:hover {
+  background-color: #ddd;
+}
+
+/* Styles for the icons */
+.mat-icon {
+  vertical-align: middle; /* Align the icon vertically in the middle */
+  margin-right: 8px; /* Add some space to the right of the icon */
+  font-size: 24px; /* Set the font size of the icon */
+}
+
+.main-content {
+  margin-left: 200px; /* Set the same width as the sidebar */
+  padding: 20px;
+}

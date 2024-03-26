@@ -1,0 +1,19 @@
+<div class="login-container">
+  <div class="login-card">
+    <div class="login-image">
+      <img src="assets/login-image.jpg" alt="Image" style="max-width: 100%; height: auto;">
+    </div>
+    <form class="login-form" [formGroup]="loginForm" (ngSubmit)="login()">
+      <h1 class="login-title">Hi, Welcome Back</h1>
+      <h3 class="login-subtitle">Login Here</h3>
+      <div class="form-group">
+        <label for="id">ID</label>
+        <input formControlName="id" required type="number" class="form-control">
+        <label for="PIN">PIN</label>
+        <input formControlName="pin" type="number" class="form-control">
+      </div>
+      <button type="submit" class="btn-login">Submit</button>
+      <span class="login-text">Don't have an account? <a routerLink="/signup">Sign Up</a></span>
+    </form>
+  </div>
+</div>
